@@ -1,44 +1,39 @@
-# DomainModelingWithActiverecord
+# Domain Modeling With ActiveRecord
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/domain_modeling_with_activerecord`. To experiment with that code, run `bin/console` for an interactive prompt.
+Agenda
+- Present a Blueprint for Coming from a Project Idea to a Domain Model
+- Apply the Blueprint to a Couple of Examples
+- Implement the Blueprint for those examples
+- Split into groups and sketch out a domain model.
 
-TODO: Delete this and the text above, and describe your gem
+## A Blueprint for Developing a Domain model
 
-## Installation
+For this, we'll be creating a couple of markdown files to keep our notes in as we work. We'll start by describing our project idea in a file called `brainstorm.md`, we'll make a list of the key features that we want and we'll answer a series of questions that will help us come up with a plan for the domain model. As we start formaling the plan, we'll sketch out some psuedocode in the `domain.mb` file. We can have them open side by side as we work so we can distinguish ideas in `brainstorm.md` from our more formalized plan in `domain.md`.
 
-Add this line to your application's Gemfile:
+### 1. Describe the App we want to build
 
-```ruby
-gem 'domain_modeling_with_activerecord'
-```
-
-And then execute:
-
-    $ bundle install
-
-Or install it yourself as:
-
-    $ gem install domain_modeling_with_activerecord
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/DakotaLMartinez/domain_modeling_with_activerecord. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/DakotaLMartinez/domain_modeling_with_activerecord/blob/master/CODE_OF_CONDUCT.md).
+### 2. What features could the application have? 
+### 3. In the description and list above, what types of *things* have we've mentioned? (make a list below)
 
 
-## License
+The *things* in this list are potential models in our program. For now, let's keep things
 
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+### 4. Go through the models two at a time and ask how they're related to one another. Make sure to talk through this from both perspectives (User has many posts, post belongs to user). If you hit many to many between two, think about what the join model should be called and add it.
 
-## Code of Conduct
+### 5.Go through the models and describe any attributes they'll have (remember to add foreign keys for those models that have a reference to other mdoels)
 
-Everyone interacting in the DomainModelingWithActiverecord project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/DakotaLMartinez/domain_modeling_with_activerecord/blob/master/CODE_OF_CONDUCT.md).
+
+### 6. Revisit the list of features and see if there are additional associations that we missed that could help with the features we listed.
+
+### 7. Take a look at our domain model and see how it feels. Could we change anything here? Leave anything out? Is there anything we can wait until later for without causing problems?
+### 8. Sketch out some examples of model objects (we'll use these to create seeds later) You can use a spreadsheet for this if you like.
+
+As we work through these questions in English within our `brainstorm.md` file, we can fill in an overview of our domain model in `domain.md`. (We'll do this by listing our models together with their attributes and associations) After we've done an exhaustive domain model, we can also try a simplified version of it. Here we'll talk about how we could split the application into fewer pieces and what the trade-offs would be.
+
+### Example Domains
+
+Sometimes I find it's a bit easier to work through this process in a google sheet. The reason is you can worry less about formatting and it's easier to arrange info side by side within a spreadsheet. Building sample data this way is definitely easier.
+
+- Messenger Application
+- Recipe Manager application
+

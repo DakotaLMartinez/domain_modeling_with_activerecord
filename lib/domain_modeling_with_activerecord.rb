@@ -1,4 +1,4 @@
-require "sinatra/active_record"
+require "sinatra/activerecord"
 require "pry"
 require "require_all"
 

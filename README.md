@@ -28,6 +28,8 @@ The *things* in this list are potential models in our program. For now, let's ke
 ### 7. Take a look at our domain model and see how it feels. Could we change anything here? Leave anything out? Is there anything we can wait until later for without causing problems?
 ### 8. Sketch out some examples of model objects (we'll use these to create seeds later) You can use a spreadsheet for this if you like.
 
+### 9. Build out the classes and some seeds.
+
 As we work through these questions in English within our `brainstorm.md` file, we can fill in an overview of our domain model in `domain.md`. (We'll do this by listing our models together with their attributes and associations) After we've done an exhaustive domain model, we can also try a simplified version of it. Here we'll talk about how we could split the application into fewer pieces and what the trade-offs would be.
 
 ### Example Domains

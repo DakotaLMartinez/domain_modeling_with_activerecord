@@ -1,7 +1,7 @@
 require "sinatra/activerecord"
 require "pry"
 require "require_all"
-
+ActiveRecord::Base.logger = Logger.new(STDOUT)
 ActiveRecord::Base.establish_connection(
   adapter: 'sqlite3',
   database: 'db/development.sqlite'

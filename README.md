@@ -8,7 +8,7 @@ Agenda
 
 ## A Blueprint for Developing a Domain model
 
-For this, we'll be creating a couple of markdown files to keep our notes in as we work. We'll start by describing our project idea in a file called `brainstorm.md`, we'll make a list of the key features that we want and we'll answer a series of questions that will help us come up with a plan for the domain model. As we start formaling the plan, we'll sketch out some psuedocode in the `domain.mb` file. We can have them open side by side as we work so we can distinguish ideas in `brainstorm.md` from our more formalized plan in `domain.md`.
+For this, we'll be creating a couple of markdown files to keep our notes in as we work. We'll start by describing our project idea in a file called `brainstorm.md`, we'll make a list of the key features that we want and we'll answer a series of questions that will help us come up with a plan for the domain model. As we start formaling the plan, we'll sketch out some psuedocode in the `domain.md` file. We can have them open side by side as we work so we can distinguish ideas in `brainstorm.md` from our more formalized plan in `domain.md`.
 
 ### 1. Describe the App we want to build
 
@@ -20,7 +20,7 @@ The *things* in this list are potential models in our program. For now, let's ke
 
 ### 4. Go through the models two at a time and ask how they're related to one another. Make sure to talk through this from both perspectives (User has many posts, post belongs to user). If you hit many to many between two, think about what the join model should be called and add it.
 
-### 5.Go through the models and describe any attributes they'll have (remember to add foreign keys for those models that have a reference to other mdoels)
+### 5.Go through the models and describe any attributes they'll have (remember to add foreign keys for those models that have a reference to other models)
 
 
 ### 6. Revisit the list of features and see if there are additional associations that we missed that could help with the features we listed.
